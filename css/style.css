@@ -81,18 +81,6 @@ body {
 
 }
 
-.menu-link {
-    transition: transform 0.5s ease-in-out, color 3.9s linear;
-
-}
-
-.menu-link:hover {
-    transform: scale(115%);
-    color: rgb(219, 187, 255);
-    transition: transform 1s ease-in-out, color 1s linear;
-}
-
-
 .menu-img {
     display: flex;
     align-items: center;
@@ -333,16 +321,19 @@ body {
 }
 
 .pricelist-item {
-    display: flex;
-    align-items: center;
-    background-color: #8D86C9;
-    justify-content: space-between;
     margin-bottom: 30px;
-    padding: 15px 30px;
 }
 
 .pricelist-item:last-child {
     margin-bottom: 0px;
+}
+
+.pricelist-link {
+    display: flex;
+    align-items: center;
+    background-color: #8D86C9;
+    justify-content: space-between;
+    padding: 15px 30px;
 }
 
 .pricelist-item h4 {
