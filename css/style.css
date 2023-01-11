@@ -261,11 +261,18 @@ body {
     gap: 15px;
 }
 
-.arrow-link {
+.arrow-button {
     display: inline-flex;
     width: 45px;
     height: 45px;
     background-color: #8D86C9;
+    align-items: center;
+    border: none;
+}
+
+.arrow-button:hover {
+opacity: .8;
+cursor: pointer;
 }
 
 .treners-list {
