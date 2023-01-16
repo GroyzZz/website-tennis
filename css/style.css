@@ -47,7 +47,6 @@ body {
 
 .background-image {
     background-image: url(../images/Navigation/background.jpg);
-    background-size: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -63,7 +62,8 @@ body {
     padding: 0 15px;
 }
 
-.nav {
+.nav,
+.footer-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,6 +131,9 @@ body {
 
 .services-list {
     display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
 }
 
 .services-item {
@@ -138,10 +141,12 @@ body {
     background-color: #8D86C9;
     width: 315px;
     height: 150px;
-    margin-left: 12px;
     align-items: center;
-    padding: 0 35px 0;
     justify-content: space-between;
+}
+
+.services-box {
+    margin-left: 35px;
 }
 
 .services-item h2 {
@@ -158,23 +163,40 @@ body {
     line-height: 33.6px;
 }
 
+.services-link {
+    margin-right: 35px;
+}
+
 .imgrow {
     padding-top: 150px;
 }
 
 .imgrow-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 24px;
 }
 
-.imgrow-item-2 {
-    margin: 0 24px;
+.imgrow-item {
+    position: relative;
+    text-align: center;
+}
+
+.imgrow-item h3 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 40px;
 }
 
 .imgrow-img {
-    width: auto;
-    height: auto;
+    width: 90%;
+    padding: 25px 20px;
+    border: 1px #F7ECE1 solid;
 }
 
 .sportclub {
@@ -271,8 +293,8 @@ body {
 }
 
 .arrow-button:hover {
-opacity: .8;
-cursor: pointer;
+    opacity: .8;
+    cursor: pointer;
 }
 
 .treners-list {
@@ -405,3 +427,274 @@ footer {
     opacity: 0.3;
 }
 
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 100px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1330px) {
+    .flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1250px) {
+    .menu-btn {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 50;
+    }
+
+    .logo,
+    .youtube-btn,
+    .vk-btn {
+        position: relative;
+        z-index: 50;
+    }
+
+
+    .btn-line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        height: 2px;
+        transition: .3s ease;
+    }
+
+    .btn-line:nth-child(1) {
+        top: 0;
+    }
+
+    .btn-line:nth-child(2) {
+        top: 20px;
+    }
+
+    .btn-line:nth-child(3) {
+        top: 20px;
+    }
+
+    .btn-line:nth-child(4) {
+        top: 40px;
+    }
+
+    .menu-open .btn-line:nth-child(1) {
+        transform: scaleX(0);
+    }
+
+    .menu-open .btn-line:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .menu-open .btn-line:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .menu-open .btn-line:nth-child(4) {
+        transform: scaleX(0);
+    }
+
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #756ead;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: .3s ease;
+    }
+
+    .menu-open .menu {
+        transform: translateY(0);
+    }
+
+    .menu-link {
+        font-size: 30px;
+    }
+
+    .services-list {
+        flex-wrap: wrap;
+    }
+
+    .imgrow-list {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sportimg {
+        display: none;
+    }
+
+    .sportclub {
+        justify-content: center;
+        width: auto;
+    }
+
+    .treners-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .services-list {
+        flex-direction: column;
+    }
+
+    .headline {
+        width: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu {
+        height: 150%;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .sportclub-box {
+        width: auto;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .box-container {
+        margin: 70px 60px 84px 75px;
+    }
+
+    .serviceimg-box {
+        width: 100%;
+    }
+
+    .serviceimg-image {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .treners-container {
+        margin-top: 200px;
+    }
+
+    .trener-item {
+        width: 100%;
+    }
+
+    .serviceimg-box h3 {
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 560px) {
+
+    .title {
+        font-size: 35px;
+    }
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .services-item {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .headline {
+        margin: 0 60px;
+    }
+
+    .imgrow-item {
+        width: 100%;
+    }
+
+    .imgrow-img {
+        width: 100%;
+        padding: 20px 0;
+        border: none;
+        border-top: 1px #F7ECE1 solid;
+        border-bottom: 1px #F7ECE1 solid;
+    }
+
+    .treners-container {
+        margin-top: 0;
+    }
+
+    .treners {
+        padding: 0 30px;
+    }
+
+    .treners-title {
+        font-size: 30px;
+    }
+
+    .pricelist {
+        width: 100%;
+    }
+
+    .serviceimg-image {
+        padding: 30px 0;
+        border: none;
+        border-top: 1px solid #F7ECE1;
+        border-bottom: 1px solid #F7ECE1;
+    }
+
+    .serviceimg-container {
+        padding: 0 30px;
+    }
+
+    .serviceimg-box h3 {
+        bottom: 27px;
+        left: 21px;
+    }
+
+    .pricelist-title {
+        margin-left: 30px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .sportclub-box {
+        margin: 70px 0 100px 0;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .imgrow-item:last-child {
+        margin-bottom: 50px;
+    }
+}
