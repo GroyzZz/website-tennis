@@ -445,6 +445,16 @@ footer {
     }
 }
 
+@media (min-width: 1250px) {
+    .swiper .swiper-wrapper .swiper-slide {
+        all: inherit;
+    }
+    .treners-btn {
+        display: none;
+    }
+
+} 
+
 @media (max-width: 1250px) {
     .menu-btn {
         display: inline-block;
@@ -524,6 +534,7 @@ footer {
     .menu-open .menu {
         transform: translateY(0);
     }
+ 
 
     .menu-link {
         font-size: 30px;
@@ -531,6 +542,10 @@ footer {
 
     .services-list {
         flex-wrap: wrap;
+    }
+
+    .services-item {
+        width: 345px;
     }
 
     .imgrow-list {
@@ -548,9 +563,10 @@ footer {
     }
 
     .treners-list {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
+
 }
 
 @media (max-width: 1050px) {
@@ -561,13 +577,6 @@ footer {
     .headline {
         width: auto;
     }
-}
-
-@media (max-width: 900px) {
-    .menu {
-        height: 150%;
-    }
-
 }
 
 @media (max-width: 860px) {

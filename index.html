@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link type="image/x-icon" rel="shortcut icon" href="/images/Navigation/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Tennis</title>
 </head>
 
@@ -131,12 +133,13 @@
                     </figure>
                 </li>
                 <li class="imgrow-item">
-
+                    <figure>
                         <img class="imgrow-img" src="./images/Social/tennis-ball.jpg"
                             alt="теннисный мяч лежит в зале с покрытием из &quot;искусственой травы&quot;">
- 
+                        <figcaption>
                             <h3 class="imgrow-title">Зал с покрытием<br>“Искусственная трава”</h3>
-
+                        </figcaption>
+                    </figure>
                 </li>
                 <li class="imgrow-item">
                     <figure>
@@ -208,72 +211,77 @@
             <div class="treners-container">
                 <h2 class="treners-title">Тренерский состав</h2>
                 <div class="treners-btn">
-                    <button class="arrow-button">
+                    <button class="arrow-button left">
                         <img src="./images/Navigation/arrow-left.svg" alt="кнопка влево" class="btn-left">
                     </button>
-                    <button class="arrow-button">
+                    <button class="arrow-button right">
                         <img src="./images/Navigation/arrow-right.svg" alt="кнопка вправо" class="btn-right">
                     </button>
                 </div>
             </div>
-            <ul class="treners-list">
-                <li class="trener-item">
-                    <figure>
-                        <img src="./images/Trainers/Pulvinar aliquam.jpg" alt="девушка сидит" class="trener-photo">
-                        <figcaption>
-                            <h4>Pulvinar aliquam</h4>
-                            <p>Arcu elit massa amet turpis vel consequat pellentesque sit.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="trener-item">
-                    <figure>
-                        <img src="./images/Trainers/Pretium odio.jpg" alt="мужчина с шляпой на голове"
-                            class="trener-photo">
-                        <figcaption>
-                            <h4>Pretium odio</h4>
-                            <p>Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="trener-item">
-                    <figure>
-                        <img src="./images/Trainers/Aliquet consectetur.jpg" alt="мужчина стоит" class="trener-photo">
-                        <figcaption>
-                            <h4>Aliquet consectetur</h4>
-                            <p>Id sapien sed nibh fermentum massa posuere ipsum. Diam in.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="trener-item">
-                    <figure>
-                        <img src="./images/Trainers/Blandit augue.jpg" alt="мужчина в очках" class="trener-photo">
-                        <figcaption>
-                            <h4>Blandit augue</h4>
-                            <p>Scelerisque accumsan pretium justo, vitae elit. Dolor semper morbi sit auctor vel diam
-                                eros.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="trener-item">
-                    <figure>
-                        <img src="./images/Trainers/Lorem lacus.jpg" alt="девушка" class="trener-photo">
-                        <figcaption>
-                            <h4>Lorem lacus</h4>
-                            <p>Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venenatis faucibus.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="trener-item">
-                    <figure>
-                        <img src="./images/Trainers/Sed erat.jpg" alt="девушка сидит возле окна" class="trener-photo">
-                        <figcaption>
-                            <h4>Sed erat</h4>
-                            <p>Quis ullamcorper pretium lacus risus tellus dolor etiam.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
+            <div class="treners-wrapper swiper">
+                <ul class="treners-list swiper-wrapper">
+                    <li class="trener-item swiper-slide">
+                        <figure>
+                            <img src="./images/Trainers/Pulvinar aliquam.jpg" alt="девушка сидит" class="trener-photo">
+                            <figcaption>
+                                <h4>Pulvinar aliquam</h4>
+                                <p>Arcu elit massa amet turpis vel consequat pellentesque sit.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="trener-item swiper-slide">
+                        <figure>
+                            <img src="./images/Trainers/Pretium odio.jpg" alt="мужчина с шляпой на голове"
+                                class="trener-photo">
+                            <figcaption>
+                                <h4>Pretium odio</h4>
+                                <p>Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="trener-item swiper-slide">
+                        <figure>
+                            <img src="./images/Trainers/Aliquet consectetur.jpg" alt="мужчина стоит"
+                                class="trener-photo">
+                            <figcaption>
+                                <h4>Aliquet consectetur</h4>
+                                <p>Id sapien sed nibh fermentum massa posuere ipsum. Diam in.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="trener-item swiper-slide">
+                        <figure>
+                            <img src="./images/Trainers/Blandit augue.jpg" alt="мужчина в очках" class="trener-photo">
+                            <figcaption>
+                                <h4>Blandit augue</h4>
+                                <p>Scelerisque accumsan pretium justo, vitae elit. Dolor semper morbi sit auctor vel
+                                    diam
+                                    eros.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="trener-item swiper-slide">
+                        <figure>
+                            <img src="./images/Trainers/Lorem lacus.jpg" alt="девушка" class="trener-photo">
+                            <figcaption>
+                                <h4>Lorem lacus</h4>
+                                <p>Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venenatis faucibus.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="trener-item swiper-slide">
+                        <figure>
+                            <img src="./images/Trainers/Sed erat.jpg" alt="девушка сидит возле окна"
+                                class="trener-photo">
+                            <figcaption>
+                                <h4>Sed erat</h4>
+                                <p>Quis ullamcorper pretium lacus risus tellus dolor etiam.</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
         </section>
         <div class="flexbox">
             <section class="pricelist">
