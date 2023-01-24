@@ -449,11 +449,12 @@ footer {
     .swiper .swiper-wrapper .swiper-slide {
         all: inherit;
     }
+
     .treners-btn {
         display: none;
     }
 
-} 
+}
 
 @media (max-width: 1250px) {
     .menu-btn {
@@ -534,7 +535,7 @@ footer {
     .menu-open .menu {
         transform: translateY(0);
     }
- 
+
 
     .menu-link {
         font-size: 30px;
